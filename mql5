@@ -1,0 +1,72 @@
+mql5
+//+------------------------------------------------------------------+
+//|                                               RSI Cross Alert MT5|
+//|                             https://forexroboteasy.com            |
+//|                                             Forex Robot Easy Team |
+//+------------------------------------------------------------------+
+
+#property copyright 'Forex Robot Easy Team'
+#property link      'https://forexroboteasy.com'
+
+//+------------------------------------------------------------------+
+//| Expert initialization function                                   |
+//+------------------------------------------------------------------+
+int OnInit()
+{
+    // Add initialization code here
+    
+    return(INIT_SUCCEEDED);
+}
+
+//+------------------------------------------------------------------+
+//| Expert deinitialization function                                 |
+//+------------------------------------------------------------------+
+void OnDeinit(const int reason)
+{
+    // Add deinitialization code here
+}
+
+//+------------------------------------------------------------------+
+//| Expert tick function                                             |
+//+------------------------------------------------------------------+
+void OnTick()
+{
+    // Add code to scan multiple currency pairs and timeframes here
+    
+    // Check for bullish or bearish candlestick patterns using RSI
+    
+    // Generate trading signals
+    
+    // Execute trades based on signals
+    
+    // Alert traders about potential trend reversals
+}
+
+//+------------------------------------------------------------------+
+//| Expert start function                                            |
+//+------------------------------------------------------------------+
+void OnStart()
+{
+    // Add code to start the expert advisor here
+    
+    while(!IsStopped())
+    {
+        OnTick();
+        Sleep(1000); // Adjust the sleep time according to your requirements
+    }
+}
+
+//+------------------------------------------------------------------+
+//| Expert error handling function                                   |
+//+------------------------------------------------------------------+
+void OnError(const int error_code, const string error_message)
+{
+    Print('Error: ', error_code, ' - ', error_message);
+}
+
+//+------------------------------------------------------------------+
+//| Expert input parameters                                          |
+//+------------------------------------------------------------------+
+input int Parameter1 = 10; // Modify the parameters according to your strategy
+input double Parameter2 = 20.0;
+
